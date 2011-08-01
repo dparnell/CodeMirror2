@@ -169,7 +169,7 @@ CodeMirror.defineMode("python", function(conf) {
             }
             if (singleline) {
                 if (conf.mode.singleLineStringErrors) {
-                    OUTCLASS = ERRORCLASS
+                    return ERRORCLASS;
                 } else {
                     state.tokenize = tokenBase;
                 }
